@@ -49,12 +49,12 @@ public class No1 {
                 ketemu = 1;
                 
             }else{
-                if (A[point] > key){ 
-                    System.out.println("Cari di kiri");
-                    batasakhir = point -1;
-                }else{
+                if (key < A[point]){ 
                     System.out.println("Cari di kanan");
-                    batasawal = point + 1;
+                    batasakhir = point +1;
+                }else{
+                    System.out.println("Cari di kiri");
+                    batasawal = point -1;
                 }
             }
         }
